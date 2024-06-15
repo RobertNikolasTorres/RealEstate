@@ -18,6 +18,10 @@ h3{
     margin-top: 10px;    
     margin-bottom: 10px;
 }
+h4{
+    text-align: center;
+    margin: 10px;
+}
 p{
     line-height: 1.5;
 }
@@ -87,4 +91,54 @@ img{
     justify-content: space-between;
     margin-right: auto;
     margin-left: auto;
+}
+.form-container{
+    background-color: gray;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+}
+fieldset{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid orange;
+}
+.field-container{
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+}
+legend{
+    font-size: 12px;
+}
+.input-container{
+    margin: 20px;
+}
+.input-container label{
+    display: inline-block;
+    width: 100px;
+}
+.input-container input,
+.input-container textarea{
+    width: 70%;
+    padding: 3px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: gray;
+}
+.footer-flex-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.fa-brands{
+    border: 1px solid black;
+    padding:10px;
+    border-radius: 50%;
 }
