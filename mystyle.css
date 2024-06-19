@@ -25,6 +25,7 @@ h4{
 p{
     line-height: 1.5;
 }
+
 img{
     max-width: 100%;
 }
@@ -34,9 +35,42 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
+
+@media(max-width: 768px){
+    .main-flex-container{
+        flex-direction: column;
+    }
+    .container{
+        width: 90%;
+    }
+}
+
 .main-flex-container{
     display: flex;
     flex-direction: row;
+}
+.main-flex-container2{
+    display: flex;
+    flex-direction: row;
+}
+.main-flex-container3{
+    display: flex;
+    flex-direction: row;
+    background-color:cadetblue;
+    
+}
+.main-flex-container4{
+    display: flex;
+    flex-direction: column;
+    background-color:cadetblue;
+    padding: 15px;
+}
+.main-flex-container5{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    padding: 25px;
+    margin: 10px;
 }
 .section-flex-container{
     display: flex;
@@ -50,14 +84,45 @@ img{
     text-align: center;
     margin: 20px;
 }
-/*header*/
-.site-init{
-    background-image: url(img/header.jpg);
-    background-size: cover;
+.btn-details2{
+    display: block;
+    background-color: black;
     color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 50%;
+}
+/*header*/
+.about-us{
+    background-color: aqua;
+    background-size: 80%;
+    color: black;
     text-align: center;
     height: 300px;   
 }
+.about-us-btns a{
+    display: block;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+}
+.site-init{
+    background-image: url(img/header.jpg);
+    background-size: 80%;
+    color: white;
+    text-align: center;
+    height: 250px;   
+}
+.about-us{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
 .bar{
     display: flex;
     justify-content: space-around;
@@ -68,19 +133,35 @@ img{
     color: white;
     margin-right: 20px;
 }
+@media(max-width:768px){
+    .bar{
+        flex-direction: column;
+        height: 180px;
+    }
+    .menu a{
+        display: block;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
 /*houses and penthouses*/
 .houses-item{
     background-color: gray;
-    margin-right: 10px;
-    
+    margin-left: auto;
+    margin-right: auto;
+}
+.houses-item2{
+    background-color: cadetblue;
+    margin-left: auto;
+    margin-right: auto;   
 }
 .houses-item-text p.description{
     font-size: 14px;
 }
 .houses-item-text p.price{
-    color: green;
+    color: black;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
 }
 .details-container{
     list-style: none;
@@ -103,6 +184,12 @@ fieldset{
     padding: 10px;
     margin: 10px;
     border: 1px solid orange;
+}
+.fieldset1{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid cadetblue;
 }
 .field-container{
     display: flex;
@@ -131,6 +218,7 @@ legend{
     align-items: center;
     height: 100px;
     background-color: gray;
+    margin-top: 20px;
 }
 .footer-flex-container{
     width: 80%;
@@ -142,3 +230,6 @@ legend{
     padding:10px;
     border-radius: 50%;
 }
+/*About us*/
+
+
